@@ -42,18 +42,3 @@ class Berita extends Model
         return $new_berita;
     }
 }
-
-
-class BeritaController extends  controller
-{
-    public function index(){
-        return view('Berita', [
-            "titlle" => "Berita",
-            "Berita" => Berita::ambildata(),
-        ]);
-    }
-
-    public function tampildata($slup) {
-        
-    }
-}
